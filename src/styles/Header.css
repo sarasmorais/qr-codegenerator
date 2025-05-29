@@ -1,0 +1,57 @@
+.header {
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-4) var(--space-6);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius-md);
+  color: white;
+}
+
+.logo-text {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-gray-900);
+  margin: 0;
+}
+
+/* Animation for the logo */
+.logo-icon svg {
+  transition: transform var(--transition-normal);
+}
+
+.logo:hover .logo-icon svg {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: var(--space-3) var(--space-4);
+  }
+  
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .logo-text {
+    font-size: var(--font-size-lg);
+  }
+}

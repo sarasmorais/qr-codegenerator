@@ -1,0 +1,25 @@
+.footer {
+  background-color: var(--color-white);
+  padding: var(--space-6);
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05);
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-gray-600);
+  font-size: var(--font-size-sm);
+}
+
+.copyright {
+  margin-top: var(--space-2);
+  color: var(--color-gray-500);
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: var(--space-4);
+  }
+}
